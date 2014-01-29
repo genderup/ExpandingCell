@@ -19,6 +19,10 @@
 		766DFF581898FDD900CD20C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766DFF401898FDD900CD20C4 /* UIKit.framework */; };
 		766DFF601898FDD900CD20C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 766DFF5E1898FDD900CD20C4 /* InfoPlist.strings */; };
 		766DFF621898FDD900CD20C4 /* ExpandingCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DFF611898FDD900CD20C4 /* ExpandingCellTests.m */; };
+		766DFF721898FE1A00CD20C4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DFF6D1898FE1A00CD20C4 /* MainViewController.m */; };
+		766DFF731898FE1A00CD20C4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766DFF6E1898FE1A00CD20C4 /* MainViewController.xib */; };
+		766DFF741898FE1A00CD20C4 /* MyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 766DFF701898FE1A00CD20C4 /* MyCustomCell.m */; };
+		766DFF751898FE1A00CD20C4 /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766DFF711898FE1A00CD20C4 /* MyCustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		766DFF5D1898FDD900CD20C4 /* ExpandingCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpandingCellTests-Info.plist"; sourceTree = "<group>"; };
 		766DFF5F1898FDD900CD20C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		766DFF611898FDD900CD20C4 /* ExpandingCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandingCellTests.m; sourceTree = "<group>"; };
+		766DFF6C1898FE1A00CD20C4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		766DFF6D1898FE1A00CD20C4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		766DFF6E1898FE1A00CD20C4 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		766DFF6F1898FE1A00CD20C4 /* MyCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomCell.h; sourceTree = "<group>"; };
+		766DFF701898FE1A00CD20C4 /* MyCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomCell.m; sourceTree = "<group>"; };
+		766DFF711898FE1A00CD20C4 /* MyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,7 @@
 		766DFF421898FDD900CD20C4 /* ExpandingCell */ = {
 			isa = PBXGroup;
 			children = (
+				766DFF6B1898FE1A00CD20C4 /* ExpandCell */,
 				766DFF4B1898FDD900CD20C4 /* AppDelegate.h */,
 				766DFF4C1898FDD900CD20C4 /* AppDelegate.m */,
 				766DFF4E1898FDD900CD20C4 /* Images.xcassets */,
@@ -142,6 +153,19 @@
 				766DFF5E1898FDD900CD20C4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		766DFF6B1898FE1A00CD20C4 /* ExpandCell */ = {
+			isa = PBXGroup;
+			children = (
+				766DFF6C1898FE1A00CD20C4 /* MainViewController.h */,
+				766DFF6D1898FE1A00CD20C4 /* MainViewController.m */,
+				766DFF6E1898FE1A00CD20C4 /* MainViewController.xib */,
+				766DFF6F1898FE1A00CD20C4 /* MyCustomCell.h */,
+				766DFF701898FE1A00CD20C4 /* MyCustomCell.m */,
+				766DFF711898FE1A00CD20C4 /* MyCustomCell.xib */,
+			);
+			path = ExpandCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				766DFF471898FDD900CD20C4 /* InfoPlist.strings in Resources */,
+				766DFF731898FE1A00CD20C4 /* MainViewController.xib in Resources */,
+				766DFF751898FE1A00CD20C4 /* MyCustomCell.xib in Resources */,
 				766DFF4F1898FDD900CD20C4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				766DFF4D1898FDD900CD20C4 /* AppDelegate.m in Sources */,
+				766DFF721898FE1A00CD20C4 /* MainViewController.m in Sources */,
+				766DFF741898FE1A00CD20C4 /* MyCustomCell.m in Sources */,
 				766DFF491898FDD900CD20C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
